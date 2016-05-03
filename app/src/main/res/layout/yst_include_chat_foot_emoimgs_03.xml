@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" 
+	   android:id="@+id/layout_foot_img1"
+       android:layout_width="fill_parent"
+       android:layout_height="30dip" 
+	   android:gravity="center" 
+	   android:orientation="horizontal"
+	   
+	   android:layout_marginTop="5dip"
+	   android:layout_marginBottom="5dip"
+	   android:layout_marginLeft="10dip"
+	   android:layout_marginRight="10dip"
+		       
+	   android:background="@color/yst_white" >
+  
+  	    <!--  5 -->
+	    <LinearLayout  
+	       android:layout_width="fill_parent"
+	       android:layout_height="fill_parent" 
+		   android:gravity="center" 
+		   
+		   android:layout_weight="1"
+		       android:tag="emoji_17"
+	       >
+		   <ImageView 
+		       android:layout_width="30dip"
+		       android:layout_height="30dip" 
+		       android:layout_centerVertical="true" 
+		       android:src="@drawable/emoji_17"
+		       />  
+    	</LinearLayout> 
+  	    <!--  6 -->
+	    <LinearLayout  
+	       android:layout_width="fill_parent"
+	       android:layout_height="fill_parent" 
+		   android:gravity="center" 
+		   
+		   android:layout_weight="1"
+		       android:tag="emoji_18"
+	       >
+		   <ImageView 
+		       android:layout_width="30dip"
+		       android:layout_height="30dip" 
+		       android:layout_centerVertical="true" 
+		       android:src="@drawable/emoji_18"
+		       />  
+    	</LinearLayout> 
+     
+  	   <!--  1 -->
+	   <LinearLayout  
+	       android:layout_width="fill_parent"
+	       android:layout_height="fill_parent" 
+		   android:gravity="center" 
+		   
+		   android:layout_weight="1"
+		       android:tag="emoji_19"
+	       >
+		   <ImageView 
+		       android:layout_width="30dip"
+		       android:layout_height="30dip" 
+		       android:layout_centerVertical="true"
+		       android:src="@drawable/emoji_19"
+		       />  
+    	</LinearLayout>
+  	    <!--  2 -->
+	    <LinearLayout  
+	       android:layout_width="fill_parent"
+	       android:layout_height="fill_parent" 
+		   android:gravity="center" 
+		   
+		   android:layout_weight="1"
+		       android:tag="emoji_20"
+	       >
+		   <ImageView 
+		       android:layout_width="30dip"
+		       android:layout_height="30dip" 
+		       android:layout_centerVertical="true" 
+		       android:src="@drawable/emoji_20"
+		       />  
+    	</LinearLayout>
+  	    <!--  3 -->
+	    <LinearLayout  
+	       android:layout_width="fill_parent"
+	       android:layout_height="fill_parent" 
+		   android:gravity="center" 
+		   android:visibility="invisible"
+		   android:layout_weight="1"
+		       android:tag="emoji_21"
+	       >
+		   <ImageView 
+		       android:layout_width="30dip"
+		       android:layout_height="30dip" 
+		       android:layout_centerVertical="true" 
+		       android:src="@drawable/emoji_21"
+		       />  
+    	</LinearLayout>
+  	    <!--  4 -->
+	    <LinearLayout  
+	       android:layout_width="fill_parent"
+	       android:layout_height="fill_parent" 
+		   android:gravity="center" 
+		   android:visibility="invisible"
+		   android:layout_weight="1"
+		       android:tag="emoji_22"
+	       >
+		   <ImageView 
+		       android:layout_width="30dip"
+		       android:layout_height="30dip" 
+		       android:layout_centerVertical="true" 
+		       android:src="@drawable/emoji_22"
+		       />  
+    	</LinearLayout>
+  	    <!--  5 -->
+	    <LinearLayout  
+	       android:layout_width="fill_parent"
+	       android:layout_height="fill_parent" 
+		   android:gravity="center" 
+		   android:visibility="invisible"
+		   android:layout_weight="1"
+		       android:tag="emoji_23"
+	       >
+		   <ImageView 
+		       android:layout_width="30dip"
+		       android:layout_height="30dip" 
+		       android:layout_centerVertical="true" 
+		       android:src="@drawable/emoji_21"
+		       />  
+    	</LinearLayout> 
+  	    <!--  6 -->
+	    <LinearLayout  
+	       android:layout_width="fill_parent"
+	       android:layout_height="fill_parent" 
+		   android:gravity="center" 
+		   android:visibility="invisible"
+		   android:layout_weight="1"
+		       android:tag="emoji_24"
+	       >
+		   <ImageView 
+		       android:layout_width="30dip"
+		       android:layout_height="30dip" 
+		       android:layout_centerVertical="true" 
+		       android:src="@drawable/emoji_22"
+		       />  
+    	</LinearLayout> 
+</LinearLayout>

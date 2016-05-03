@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent"
+	android:layout_height="wrap_content"    
+	android:background="@color/yst_white"
+	android:id="@+id/yst_layout_send2"
+	android:visibility="gone"
+	android:orientation="vertical"
+   >  
+    <RelativeLayout  
+        android:layout_width="fill_parent"
+        android:layout_height="1dip" 
+        android:background="@color/yst_line"
+        > 
+    </RelativeLayout> 
+	<RelativeLayout  
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"   
+		android:id="@+id/yst_layout_send" 
+	   >
+	    <!-- 右边发送 -->
+	    <Button   
+		    android:id="@+id/yst_btn_send2"
+		    android:layout_width="50dip" 
+		    android:layout_height="38dip" 	 
+		    
+	       	android:layout_alignParentRight="true"    
+	        android:layout_centerHorizontal="true"
+	        android:layout_centerVertical="true"   
+			android:gravity="center"  
+			android:layout_marginTop="16dip" 
+			android:layout_marginLeft="6dip" 
+			android:layout_marginRight="6dip" 
+			
+			android:textColor="@color/yst_white" 
+			android:textSize="13dp"
+		    android:text="发送"  
+		    android:background="@drawable/yst_btn_chatsend"
+		    /> 
+		<!-- 中间输入 -->
+	    <EditText   
+		    android:id="@+id/yst_ed_msg2" 
+		    android:layout_width="fill_parent" 
+		    android:layout_height="wrap_content" 	  
+		         
+		    android:minHeight="33dip"
+	        android:layout_centerHorizontal="true"
+	        android:layout_centerVertical="true"    
+			android:gravity="left|center"   
+			
+			android:layout_toLeftOf="@id/yst_btn_send2"  
+			android:layout_marginLeft="6dip"  
+			android:paddingLeft="5dip" 
+			android:textColor="@color/yst_black" 
+			android:textSize="14dip"
+		    android:text=""  
+		    android:background="@drawable/yst_edit_white"
+		    /> 
+	</RelativeLayout> 
+    <RelativeLayout  
+        android:layout_width="fill_parent"
+        android:layout_height="1dip" 
+        android:background="@color/yst_line"
+        > 
+    </RelativeLayout> 
+</LinearLayout>  
+  	

@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.youkedemo"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.READ_LOGS" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+
+    <application
+        android:name=".DemoApp"
+        android:allowBackup="true"
+        android:label="@string/app_name"
+        android:persistent="true"
+        android:theme="@android:style/Theme.Translucent.NoTitleBar" >
+
+        <!-- testin -->
+        <!-- 设置AppKey -->
+        <meta-data
+            android:name="TESTIN_APPKEY"
+            android:value="8291063e9e1a94bc1b3354dad7e5bcbc" />
+
+        <!-- 设置渠道信息 -->
+        <meta-data
+            android:name="TESTIN_CHANNEL"
+            android:value="Channel_ID" />
+
+        <!-- 启动界面 -->
+        <activity
+            android:name=".ui.ActivityMain"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+
+        <!-- ==================youkeSDK app key================== -->
+        <meta-data
+            android:name="zpf_yst_app_key"
+            android:value="770b58f3bf31b34cfc6bd13e78d7d724" />
+
+        <!-- ==================youkeSDK activity================== -->
+        <activity
+            android:name="com.zipingfang.android.yst.ui.chat.ActivityChat"
+            android:configChanges="orientation|screenSize"
+            android:label="@string/yst_chat_title"
+            android:screenOrientation="portrait"
+            android:theme="@style/MainTheme.NoTitleBar"
+            android:windowSoftInputMode="stateHidden|adjustResize" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.zipingfang.android.yst.libs.image_tools.ActivityImageView"
+            android:label="@string/yst_imgview_title"
+            android:theme="@style/MainTheme.NoTitleBar" />
+
+        <activity
+            android:name="com.zipingfang.android.yst.ui.users.ActivityUserInfo"
+            android:label="@string/yst_userinfo_title"
+            android:theme="@style/MainTheme.NoTitleBar" />
+        <activity
+            android:name="com.zipingfang.android.yst.ui.tips.ActivityTips"
+            android:theme="@style/yst_transparent_style" >
+        </activity>
+        <activity
+            android:name="com.zipingfang.android.yst.ui.users.ActivityTipsUser"
+            android:label="@string/yst_tipsuser"
+            android:theme="@style/MainTheme.NoTitleBar" />
+        <activity
+            android:name="com.zipingfang.android.yst.ui.help_work.ActivityAddWork"
+            android:label="@string/yst_add_work"
+            android:theme="@style/MainTheme.NoTitleBar"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity
+            android:name="com.zipingfang.android.yst.ui.help_work.ActivityWorkList"
+            android:label="@string/yst_work_list"
+            android:theme="@style/MainTheme.NoTitleBar" />
+        <activity
+            android:name="com.zipingfang.android.yst.ui.help_work.ActivityWorkListChild"
+            android:label="@string/yst_work_list"
+            android:theme="@style/MainTheme.NoTitleBar" />
+        <!-- 聊天用户消息列表 -->
+        <activity
+            android:name="com.zipingfang.android.yst.ui.users.ActivityChatList"
+            android:label="@string/yst_chatuserlist"
+            android:theme="@style/MainTheme.NoTitleBar" >
+        </activity>
+        <!-- ==================youkeSDK 广播================== -->
+        <receiver android:name="com.zipingfang.yst.broadcast.Yst_NetworkReceiver" >
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+            </intent-filter>
+            <!-- android reboot -->
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+            </intent-filter>
+            <!-- install package -->
+            <intent-filter>
+                <action android:name="android.intent.action.PACKAGE_ADDED" />
+                <action android:name="android.intent.action.PACKAGE_REMOVED" />
+
+                <data android:scheme="package" />
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.zipingfang.yst.broadcast.Yst_ScreenReceiver" >
+            <intent-filter android:priority="90000" >
+                <action android:name="android.intent.action.USER_PRESENT" />
+            </intent-filter>
+        </receiver>
+        <!-- ==================youkeSDK 服务================== -->
+        <service android:name="com.zipingfang.yst.service.Yst_NetworkChangeService" />
+        <service android:name="com.zipingfang.yst.service.Yst_TimeService" />
+    </application>
+
+    <!-- =============================== 权限-permission =============================== -->
+    <!-- 往SDCard写入数据权限 -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <!-- 在SDCard中创建于删除文件权限 -->
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+
+    <!-- 网络访问权限 -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" /> <!-- 网络状态改变 -->
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" /> <!-- GPRS开关 -->
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" /> <!-- 飞行模式 -->
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+
+    <!-- 后台也运行着 -->
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+
+    <!-- 解锁的权限 -->
+    <uses-permission android:name="android.permission.DISABLE_KEYGUARD" />
+
+    <!-- 录音 -->
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+
+    <!-- 震动 -->
+    <uses-permission android:name="android.permission.VIBRATE" />
+
+    <!-- 桌面浮动 , 顶层浮动窗口 -->
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+
+    <!-- 通讯录 -->
+    <uses-permission android:name="android.permission.CALL_PHONE" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.READ_CONTACTS" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.WRITE_CONTACTS" >
+    </uses-permission>
+
+    <!-- 定位 -->
+    <permission android:name="android.permission.BAIDU_LOCATION_SERVICE" >
+    </permission>
+
+    <uses-permission android:name="android.permission.BAIDU_LOCATION_SERVICE" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.READ_LOGS" />
+
+    <!-- CAMERA访问权限 -->
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+
+    <uses-permission android:name="android.permission.FLASHLIGHT" />
+
+    <!-- 开机启动接收消息 -->
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+
+    <supports-screens
+        android:anyDensity="true"
+        android:largeScreens="true"
+        android:normalScreens="true"
+        android:resizeable="true"
+        android:smallScreens="true" />
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="17" />
+
+</manifest>

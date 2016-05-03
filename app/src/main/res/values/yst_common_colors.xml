@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    
+	<!-- sdk通常用颜色值 -->
+	<color name="yst_black">#000000</color>
+	<color name="yst_blue">#2E6DB6</color>
+	<color name="yst_white">#ffffff</color>
+	<color name="yst_gray">#808080</color> 
+	<color name="yst_gray2">#A8A8A8</color> 
+	
+    <color name="yst_Maroon">#800000</color>
+    <color name="yst_red">#ff0000</color>
+	<!-- 顶部标题的颜色 -->
+	<color name="yst_color_comm_title">@color/yst_black</color>
+		
+	 <!-- 半透明,背景带有半阴影 -->
+	 <color name="yst_transparent">#9000</color>
+	 <!-- 全透明 -->
+	 <color name="yst_transparent_full">#00000000</color>
+ 
+ 	<color name="yst_selector_black">#e7e7e7</color>
+ 
+    <!--
+         activity 透明,背景带有半阴影
+		透明的效果参数从00...99(透明 不怎么透明)，后6位是颜色的设置
+    -->
+    <color name="yst_activity_transparent">#98000000</color>
+ 	
+    
+	<!-- 顶部状态栏背景颜色 -->
+	<color name="yst_titile_bg">#F8F8F8</color>
+	<color name="yst_full_bg">#F7F7F7</color>
+	<!-- 聊天详细页背景颜色 -->
+	<color name="yst_chat_bg">#ffffff</color>
+	<!-- 聊天详细页字体颜色 -->
+	<color name="yst_chat_txt">#000000</color>
+	<color name="yst_line">#E9E9E9</color>
+	    
+    <!-- 自定义Toast的背景色 -->
+    <color name="yst_round_toast_bg">#8f000000</color>
+    <!-- 自定义Toast的字体颜色 -->
+    <color name="yst_round_toast_msg_color">#ffffffff</color>
+    <!-- 自定义ProgressDialog的背景色 -->
+    <color name="yst_progress_toast_bg">#8f000000</color>
+    <!-- 自定义ProgressDialog的字体颜色 -->
+    <color name="yst_progress_toast_msg_color">#ffffffff</color>
+	
+</resources>

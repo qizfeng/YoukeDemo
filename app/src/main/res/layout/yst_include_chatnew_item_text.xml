@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/yst_chat_bg"
+    android:orientation="vertical" >
+
+    <!-- 线条 -->
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/yst_txt_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dip"
+            android:gravity="left|center"
+            android:paddingBottom="3dip"
+            android:paddingLeft="5dip"
+            android:paddingTop="3dip"
+            android:text="排队中，您在队伍中的第2个 您可以"
+            android:textColor="@color/yst_gray"
+            android:textSize="11sp" />
+
+        <TextView
+            android:id="@+id/yst_txt_msg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dip"
+            android:layout_toRightOf="@+id/yst_txt_text"
+            android:paddingBottom="3dip"
+            android:paddingRight="5dip"
+            android:paddingTop="3dip"
+            android:text="留言"
+            android:textColor="@color/yst_red"
+            android:textSize="11sp"/>
+    </RelativeLayout>
+
+</LinearLayout>

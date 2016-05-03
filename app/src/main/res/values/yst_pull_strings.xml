@@ -1,0 +1,9 @@
+<resources>
+
+    <!-- refresh_pull -->
+    <string name="pull_to_refresh_pull_label">下拉更新...</string>
+    <string name="pull_to_refresh_release_label">松开即可更新...</string>
+    <string name="pull_to_refresh_refreshing_label">加载中...</string>
+    <string name="pull_to_refresh_tap_label">上拉刷新...</string>
+  
+</resources>

@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" 
+	   android:id="@+id/layout_foot_img1"
+       android:layout_width="fill_parent"
+       android:layout_height="30dip" 
+	   android:gravity="center" 
+	   android:orientation="horizontal"
+	   
+	   android:layout_marginTop="5dip"
+	   android:layout_marginBottom="5dip"
+	   android:layout_marginLeft="10dip"
+	   android:layout_marginRight="10dip"
+		       
+	   android:background="@color/yst_white" >
+  
+  	   <!--  1 -->
+	   <LinearLayout  
+	       android:layout_width="fill_parent"
+	       android:layout_height="fill_parent" 
+		   android:gravity="center" 
+		   android:visibility="invisible"
+		   android:layout_weight="1"
+		       android:tag="emoji_25"
+	       >
+		   <ImageView 
+		       android:layout_width="30dip"
+		       android:layout_height="30dip" 
+		       android:layout_centerVertical="true"
+		       />  
+    	</LinearLayout>
+  	    <!--  2 -->
+	    <LinearLayout  
+	       android:layout_width="fill_parent"
+	       android:layout_height="fill_parent" 
+		   android:gravity="center" 
+		   android:visibility="invisible"
+		   android:layout_weight="1"
+	       >
+		   <ImageView 
+		       android:layout_width="30dip"
+		       android:layout_height="30dip" 
+		       android:layout_centerVertical="true" 
+		       />  
+    	</LinearLayout>
+  	    <!--  3 -->
+	    <LinearLayout  
+	       android:layout_width="fill_parent"
+	       android:layout_height="fill_parent" 
+		   android:gravity="center" 
+		   android:visibility="invisible"
+		   android:layout_weight="1"
+		       android:tag="emoji_27"
+	       >
+		   <ImageView 
+		       android:layout_width="30dip"
+		       android:layout_height="30dip" 
+		       android:layout_centerVertical="true" 
+		       />  
+    	</LinearLayout>
+  	    <!--  4 -->
+	    <LinearLayout  
+	       android:layout_width="fill_parent"
+	       android:layout_height="fill_parent" 
+		   android:gravity="center" 
+		   android:visibility="invisible"
+		   android:layout_weight="1"
+		       android:tag="emoji_28"
+	       >
+		   <ImageView 
+		       android:layout_width="30dip"
+		       android:layout_height="30dip" 
+		       android:layout_centerVertical="true" 
+		       />  
+    	</LinearLayout>
+  	    <!--  5 -->
+	    <LinearLayout  
+	       android:layout_width="fill_parent"
+	       android:layout_height="fill_parent" 
+		   android:gravity="center" 
+		   android:visibility="invisible"
+		   android:layout_weight="1"
+		       android:tag="emoji_29"
+	       >
+		   <ImageView 
+		       android:layout_width="30dip"
+		       android:layout_height="30dip" 
+		       android:layout_centerVertical="true" 
+		       />  
+    	</LinearLayout> 
+  	    <!--  6 -->
+	    <LinearLayout  
+	       android:layout_width="fill_parent"
+	       android:layout_height="fill_parent" 
+		   android:gravity="center" 
+		   android:visibility="invisible"
+		   android:layout_weight="1"
+		       android:tag="emoji_30"
+	       >
+		   <ImageView 
+		       android:layout_width="30dip"
+		       android:layout_height="30dip" 
+		       android:layout_centerVertical="true" 
+		       />  
+    	</LinearLayout> 
+    	
+  	   <!--  1 -->
+	   <LinearLayout  
+	       android:layout_width="fill_parent"
+	       android:layout_height="fill_parent" 
+		   android:gravity="center" 
+		   android:visibility="invisible"
+		   android:layout_weight="1"
+		       android:tag="emoji_31"
+	       >
+		   <ImageView 
+		       android:layout_width="30dip"
+		       android:layout_height="30dip" 
+		       android:layout_centerVertical="true"
+		       />  
+    	</LinearLayout>
+<!--   	     2 -->
+<!-- 	    <LinearLayout   -->
+<!-- 	       android:layout_width="fill_parent" -->
+<!-- 	       android:layout_height="fill_parent"  -->
+<!-- 		   android:gravity="center"  -->
+		   
+<!-- 		   android:layout_weight="1" -->
+<!-- 		       android:tag="emoji_32" -->
+<!-- 	       > -->
+<!-- 		   <ImageView  -->
+<!-- 		       android:layout_width="30dip" -->
+<!-- 		       android:layout_height="30dip"  -->
+<!-- 		       android:layout_centerVertical="true"  -->
+<!-- 		       android:src="@drawable/emoji_32" -->
+<!-- 		       />   -->
+<!--     	</LinearLayout> -->
+     
+  	    <!--  del -->
+	    <LinearLayout  
+	       android:id="@+id/yst_keyboard_del_01"
+	       android:layout_width="fill_parent"
+	       android:layout_height="fill_parent" 
+		   android:gravity="center" 
+		   
+		   android:layout_weight="1"  
+	       >
+		   <ImageView 
+		       android:layout_width="30dip"
+		       android:layout_height="30dip" 
+		       android:layout_centerVertical="true" 
+		       android:src="@drawable/yst_keyboard_del"
+		       />  
+    	</LinearLayout> 
+</LinearLayout>

@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/yst_chat_bg"
+    android:orientation="vertical" >
+
+    <!-- top -->
+
+    <RelativeLayout
+        android:id="@+id/yst_layout_top"
+        android:layout_width="fill_parent"
+        android:layout_height="48dip"
+        android:layout_alignParentTop="true" >
+
+        <include layout="@layout/yst_bar_title_return" />
+
+        <include layout="@layout/yst_include_chatnew_top" />
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="1dip"
+            android:layout_alignParentBottom="true"
+            android:background="@color/yst_line" >
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <!-- network error -->
+
+    <RelativeLayout
+        android:id="@+id/yst_page_error"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/yst_layout_top"
+        android:visibility="gone" >
+
+        <include layout="@layout/yst_bar_error" />
+
+        <include layout="@layout/yst_bar_wait" />
+    </RelativeLayout>
+
+    <!-- foot -->
+
+    <RelativeLayout
+        android:id="@+id/yst_layout_foot"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="10dp" >
+
+        <include layout="@layout/yst_include_chatnew_foot" />
+    </RelativeLayout>
+
+    <!-- center  style="@style/listView" -->
+
+    <com.zipingfang.android.yst.libs.pullView.ListViewEx
+        android:id="@+id/yst_listView"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_above="@id/yst_layout_foot"
+        android:layout_below="@id/yst_page_error"
+        android:cacheColorHint="#00000000"
+        android:divider="@null"
+        android:dividerHeight="0dip"
+        android:fadeScrollbars="true"
+        android:fadingEdge="none"
+        android:fastScrollEnabled="false"
+        android:focusable="true"
+        android:paddingBottom="5dp"
+        android:scrollbars="none"
+        android:transcriptMode="alwaysScroll" />
+
+    <!-- audio pop -->
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true" >
+
+        <include layout="@layout/yst_include_chatnew_dailog_audio" />
+    </RelativeLayout>
+
+    <!-- login pop -->
+
+    <RelativeLayout
+        android:id="@+id/yst_chat_container_login"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:background="@color/yst_transparent" >
+
+        <include layout="@layout/yst_include_chatnew_dailog_login" />
+    </RelativeLayout>
+
+    <!-- endsession pop -->
+
+    <RelativeLayout
+        android:id="@+id/yst_chat_container_endsession"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:background="@color/yst_transparent" >
+
+        <include layout="@layout/yst_include_chatnew_dailog_session" />
+    </RelativeLayout>
+
+    <!-- pfview pop -->
+
+    <RelativeLayout
+        android:id="@+id/yst_chat_container_pfview"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:background="@color/yst_transparent" >
+
+        <include layout="@layout/yst_include_chatnew_dailog_pfview" />
+    </RelativeLayout>
+
+    <!-- robot pingjia pop-->
+      <RelativeLayout
+        android:id="@+id/yst_chat_container_robot_pjview"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:background="@color/yst_transparent"
+        android:visibility="gone" >
+
+        <include layout="@layout/yst_include_chatnew_dailog_pjview" />
+    </RelativeLayout>
+    
+    
+    
+    <!-- state -->
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/yst_page_error" >
+
+        <TextView
+            android:id="@+id/yst_chat_status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_margin="15dp"
+            android:background="@drawable/yst_online_bg_on"
+            android:gravity="left|center"
+            android:paddingLeft="20dp"
+            android:text="在线"
+            android:textColor="@color/yst_white"
+            android:textSize="11dp" />
+    </RelativeLayout>
+
+    <!-- faq -->
+
+    <LinearLayout
+        android:id="@+id/yst_page_faq"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/yst_layout_top"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/txt_faq_content_1"
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"
+            android:background="@drawable/yst_selector_white_bg"
+            android:gravity="left|center"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:text="..."
+            android:textColor="#8B8B8B"
+            android:textSize="15dp" />
+
+        <RelativeLayout
+            android:id="@+id/line_faq_content_1"
+            android:layout_width="fill_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/yst_line" />
+
+        <TextView
+            android:id="@+id/txt_faq_content_2"
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"
+            android:background="@drawable/yst_selector_white_bg"
+            android:gravity="left|center"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:text="..."
+            android:textColor="#8B8B8B"
+            android:textSize="15dp" />
+
+        <RelativeLayout
+            android:id="@+id/line_faq_content_2"
+            android:layout_width="fill_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/yst_line" />
+
+        <TextView
+            android:id="@+id/txt_faq_content_3"
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"
+            android:background="@drawable/yst_selector_white_bg"
+            android:gravity="left|center"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:text="..."
+            android:textColor="#8B8B8B"
+            android:textSize="15dp" />
+
+        <RelativeLayout
+            android:id="@+id/line_faq_content_3"
+            android:layout_width="fill_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/yst_line" />
+    </LinearLayout>
+
+</RelativeLayout>

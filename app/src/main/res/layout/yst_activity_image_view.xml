@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/yst_rootLayout"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#000000" >
+
+    <!-- head --> 
+    <RelativeLayout 
+        android:id="@+id/yst_layout_top"
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+        android:layout_alignParentTop="true" 
+		android:gravity="center"  
+	    android:orientation="vertical" 
+    	android:background="@color/yst_black" 
+    	 android:visibility="gone"
+	    >
+        <include layout="@layout/yst_bar_title_return"/>  
+    </RelativeLayout>    
+	 
+    <com.zipingfang.android.yst.libs.image_tools.ViewPager
+        android:id="@+id/yst_viewPager"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="#000000"
+        android:layout_below="@+id/yst_layout_top"  />
+
+    <RelativeLayout
+        android:id="@+id/yst_ll_header"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:layout_alignTop="@id/yst_viewPager"
+        android:background="#88000000"
+        android:gravity="top" >
+
+        <TextView
+            android:id="@+id/yst_tv_page"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="1/10" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/yst_ll_bottom"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/yst_viewPager"
+        android:background="#88000000"
+        android:paddingRight="15dip"
+        android:paddingBottom="15dip"
+        android:gravity="right|bottom" >
+
+        <Button
+            android:id="@+id/yst_btn_open"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="打开"
+            android:visibility="gone"  />
+
+        <Button
+            android:id="@+id/yst_btn_pre"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="前一张" 
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/yst_tv_pic_name"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="图片名"
+            android:visibility="gone" />
+
+        <Button
+            android:id="@+id/yst_btn_next"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="后一张"
+            android:visibility="gone"  />
+		<LinearLayout
+		        android:id="@+id/yst_btn_dialog"
+		        android:layout_width="60dip"
+		        android:layout_height="40dip"  
+		        android:gravity="center" >
+		        <ImageView
+		            android:layout_width="15dip"
+		            android:layout_height="25dip"
+		            android:layout_gravity="center"  
+		            android:scaleType="fitXY"
+		            android:src="@drawable/yst_iv_download" />
+        </LinearLayout>
+         
+    </LinearLayout>
+
+    <ZoomControls
+        android:id="@+id/yst_zoomButtons"
+        android:layout_width="0dip"
+        android:layout_height="0dip"
+        android:layout_above="@id/yst_ll_bottom"
+        android:layout_alignParentRight="true"   />
+
+</RelativeLayout>

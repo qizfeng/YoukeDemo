@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"  
+    android:id="@+id/layout_full"
+	> 
+ 	 
+	<ImageView
+	    android:id="@+id/layout_full_img"
+        android:layout_width="fill_parent"  
+        android:layout_height="fill_parent"  
+        />
+	<ImageView
+	    android:id="@+id/img_before"
+        android:layout_width="fill_parent"  
+        android:layout_height="fill_parent" 
+		android:background="#000000"  
+        />
+	<RelativeLayout 
+	    android:id="@+id/layout_small_bg"
+	    android:layout_width="fill_parent"
+	    android:layout_height="200dp"
+	    android:orientation="vertical"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+		android:layout_gravity="center"  
+		android:gravity="center"
+	    android:layout_marginTop="30dip"
+	    android:layout_marginBottom="10dip"
+	    android:layout_marginLeft="30dip"
+	    android:layout_marginRight="30dip" 
+		android:background="@drawable/yst_serviceuser_bg" > 
+		 	
+		<ImageView
+		    android:id="@+id/layout_small_img"
+	        android:layout_width="fill_parent"  
+	        android:layout_height="fill_parent"  
+	        android:src="@drawable/yst_def_img"
+	        android:scaleType="fitCenter"
+	        />
+		
+		<!-- 标题 -->
+		<TextView
+	        android:id="@+id/yst_title" 
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"           
+	        
+	    	android:layout_margin="10dip" 
+	        android:layout_centerHorizontal="true"
+	        android:layout_centerVertical="true"
+			android:layout_gravity="center"  
+			android:gravity="center"
+			 
+			android:textColor="@color/yst_black" 
+			android:textSize="@dimen/yst_dim_comm_title"
+			android:text="text"  
+		/> 
+	     
+		<Button
+		    android:id="@+id/yst_btn_call"
+	        android:layout_width="fill_parent"  
+	        android:layout_height="35dip" 
+	    	
+			android:layout_gravity="center"
+			android:gravity="center"  
+			android:layout_marginTop="30dip"
+			android:layout_marginBottom="20dip"
+			android:layout_marginLeft="30dip"
+			android:layout_marginRight="30dip"
+			
+	        android:text="确定"  
+		    android:textSize="16dp"
+		    android:textColor="@color/yst_white" 
+			android:background="@drawable/yst_btn"
+			android:visibility="gone"
+	        />
+	</RelativeLayout>
+</RelativeLayout>

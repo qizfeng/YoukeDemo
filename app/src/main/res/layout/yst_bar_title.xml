@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="38dip"
+    android:orientation="vertical"   > 
+ 	
+	<!-- 标题 -->
+	<TextView
+        android:id="@+id/yst_comm_title" 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"           
+        
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"   
+		android:layout_gravity="center"  
+		android:gravity="center"
+		
+		android:singleLine="true"		
+		android:ellipsize="end"
+		android:textColor="@color/yst_color_comm_title" 
+		android:textSize="@dimen/yst_dim_comm_title"
+		android:text="@string/yst_app_name"  
+	/> 
+               
+</RelativeLayout>

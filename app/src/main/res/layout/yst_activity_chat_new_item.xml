@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android" 
+	android:id="@+id/yst_layout_list_item" 
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+	android:orientation="vertical"  
+	android:paddingLeft="5dip"	
+	android:paddingRight="5dip"	
+	android:paddingTop="1dip"
+	android:paddingBottom="1dip"  
+	android:background="@color/yst_chat_bg"
+    >
+    
+    <Button  
+		android:layout_width="0dip"
+		android:layout_height="0dip"   
+		android:text="用此隐藏listview点击后背景变黑的效果" 
+		/>
+	<include layout="@layout/yst_include_chatnew_item_date"/>
+	<include layout="@layout/yst_include_chatnew_item_left"/>
+	<include layout="@layout/yst_include_chatnew_item_right"/>
+	 
+</LinearLayout>
+

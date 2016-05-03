@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent" 
+	android:layout_height="fill_parent" 
+    android:layout_centerHorizontal="true"
+    android:id="@+id/yst_rl_endsession_end"
+    android:orientation="vertical"   >
+      
+	<LinearLayout 
+        android:layout_width="fill_parent"
+    	android:layout_height="136dip" 	 
+        android:layout_centerHorizontal="true" 
+		android:layout_alignParentBottom="true"  
+		android:gravity="bottom"
+		android:orientation="vertical" 
+   		android:background="#F5F4F9" >  <!-- 图片会透明，这个不会 --> 
+   		  
+	  	<!-- title -->
+	    <TextView 
+	        android:layout_width="fill_parent"  
+	        android:layout_height="25dip"     
+	        android:layout_centerVertical="true"
+	        android:layout_marginLeft="10dp"
+	        android:layout_marginTop="15dp"
+			android:gravity="left|center"   
+	        android:text="您是否要结束本次会话"  
+		    android:textSize="11dp"
+		    android:textColor="@color/yst_gray"   
+	        />   
+  	   
+	    <Button 
+		    android:id="@+id/yst_endsession_end"
+	        android:layout_width="fill_parent"  
+	        android:layout_height="38dp"     
+			android:layout_marginTop="11dp"    
+			android:gravity="center"   
+	        android:hint="结束"  
+		    android:textSize="11dp"
+		    android:textColor="@color/yst_gray"   
+		    android:background="@drawable/yst_rect_white"
+	        />   
+	      
+	    <Button 
+		    android:id="@+id/yst_endsession_return"
+	        android:layout_width="fill_parent"  
+	        android:layout_height="38dp"    
+			android:layout_marginTop="11dp"     
+			android:gravity="center"    
+	        android:hint="返回首页"  
+		    android:textSize="11dp"
+		    android:textColor="@color/yst_gray"   
+		    android:background="@drawable/yst_rect_white"
+	        />  
+  	</LinearLayout>    
+	     
+</RelativeLayout> 

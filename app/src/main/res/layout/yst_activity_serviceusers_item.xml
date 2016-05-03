@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"  
+	android:id="@+id/yst_layout_list_item" 
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+	android:orientation="vertical"
+	android:background="@drawable/yst_btn_white"
+    >
+    <LinearLayout 
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+		android:orientation="horizontal" 
+		android:padding="5dp"
+	    > 
+	    <Button  
+			android:layout_width="0dip"
+			android:layout_height="0dip"   
+			android:text="用此隐藏listview点击后背景变黑的效果" 
+			/>
+		<ImageView  
+		    android:id="@+id/yst_img_user"
+		    android:layout_width="50dip"  
+		    android:layout_height="50dip"   
+		    
+			android:layout_marginLeft="3dip"
+			android:layout_gravity="center"
+			android:gravity="center"  
+	        android:layout_centerHorizontal="true"
+	        android:layout_centerVertical="true"
+		    android:layout_alignParentLeft="true"
+		    android:src="@drawable/yst_def_userimg"
+		    />	
+		      
+		<LinearLayout  
+	        android:id="@+id/yst_layout_right"
+		    android:layout_width="wrap_content"  
+		    android:layout_height="wrap_content"  	    
+		    android:orientation="vertical" 
+			      
+			android:layout_gravity="center"
+			android:gravity="center"  
+	        android:layout_centerHorizontal="true"
+	        android:layout_centerVertical="true"  
+		   	android:paddingLeft="5dp"
+		   	android:paddingRight="5dp"
+			android:layout_marginLeft="10dip"
+		    android:layout_toRightOf="@id/yst_img_user"
+		    >	 
+		    <include layout="@layout/yst_include_serviceusers_title"/> 
+		    <include layout="@layout/yst_include_serviceusers_remark"/>  
+		</LinearLayout>  
+	</LinearLayout>   
+    <LinearLayout 
+        android:layout_width="fill_parent"  
+        android:layout_height="0.3dp"
+        android:background="#eeeeee"  
+        />        
+</LinearLayout>
+

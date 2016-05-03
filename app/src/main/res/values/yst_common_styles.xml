@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="AnimationPreview">
+        <item name="android:windowEnterAnimation">@anim/yst_audio_in</item>
+        <item name="android:windowExitAnimation">@anim/yst_audio_out</item>
+    </style>
+
+    <!-- base --> 
+    <style name="baseStyle"></style>
+
+    <style name="MainTheme.NoTitleBar.CustomBackground" parent="@android:Theme.Black">
+        <item name="android:windowBackground">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+    </style>
+    
+    <!-- 透明背景设置  android:theme="@style/yst_transparent_style"  -->
+	<style name="yst_transparent_style">  
+	    <item name="android:windowBackground">@color/yst_transparent_full</item>  
+	    <item name="android:windowNoTitle">true</item>  
+	    <item name="android:windowIsTranslucent">true</item>   
+    	<item name="android:windowAnimationStyle">@android:style/Animation.Translucent</item>    
+	</style>   
+
+	
+    <!-- 自定义进度条提示RoundProgressDialog主题 -->
+    <style name="yst_RoundProgressDialog_Theme" parent="@android:style/Theme.Dialog">
+
+        <!-- Dialog的windowFrame框为无 -->
+        <item name="android:windowFrame">@null</item>
+        <!-- 是否漂现在activity上 -->
+        <item name="android:windowIsFloating">true</item>
+        <!-- 对话框是否有遮盖 -->
+        <item name="android:windowContentOverlay">@null</item>
+        <!-- 对话框是否透明 -->
+        <item name="android:windowIsTranslucent">true</item>
+        <!-- 对话框的背景 -->
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <!-- 对话框无标题 -->
+        <item name="android:windowNoTitle">true</item>
+    </style>
+	
+    <!-- 自定义进度条提示RoundProgressDialog -->
+    <style name="yst_RoundProgressDialog">
+        <item name="android:minWidth">60dp</item>
+        <item name="android:minHeight">60dp</item>
+        <item name="android:paddingTop">20dp</item>
+        <item name="android:paddingBottom">20dp</item>
+        <item name="android:paddingLeft">30dp</item>
+        <item name="android:paddingRight">30dp</item>
+    </style>
+    
+    <!--
+         cancel:
+        <item name="android:layout_alignParentTop">true</item>   
+        <item name="android:transcriptMode">alwaysScroll</item>  
+        <item name="android:stackFromBottom">true</item>   
+        
+        <item name="android:divider">@null</item>
+        <item name="android:divider">@color/white</item>
+        <item name="android:listSelector">@drawable/selector_list_item</item> 
+        <item name="android:listSelector">@android:color/transparent</item>  
+
+        <item name="android:scrollbars">none</item>  
+		android:scrollbars="none"
+
+    -->
+    <style name="listView" parent="baseStyle">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">fill_parent</item>
+        <item name="android:cacheColorHint">#00000000</item>
+        <item name="android:divider">#dddddd</item>
+        <item name="android:dividerHeight">1dip</item>
+        <item name="android:fadingEdge">none</item>
+        <item name="android:fadeScrollbars">true</item>
+        <item name="android:focusable">true</item>
+        <item name="android:fastScrollEnabled">false</item>
+    </style>
+ 
+<!-- 	top tabs sheet -->
+    <style name="top_tab_bar_item" parent="@android:style/Widget.CompoundButton.RadioButton">
+	        <item name="android:layout_height">10dp</item>
+	        <item name="android:layout_width">10dp</item> 
+	        
+	        <item name="android:gravity">center</item>
+	        <item name="android:layout_gravity">center_vertical</item>
+	        <item name="android:layout_marginTop">0dp</item>
+	        <item name="android:layout_marginLeft">3dp</item>
+	        <item name="android:layout_marginRight">3dp</item> 
+	        
+	        <item name="android:button">@null</item>
+	        <item name="android:textColor">@android:color/black</item> 
+	</style>
+	
+</resources>

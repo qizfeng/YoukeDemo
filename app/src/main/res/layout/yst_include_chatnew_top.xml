@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="48dip"
+    android:orientation="vertical"   > 
+ 	
+	<!-- 右边设置按钮 -->
+	<TextView
+        android:id="@+id/yst_btn_setting" 
+        android:layout_width="45dip"
+        android:layout_height="fill_parent"           
+         
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"   
+		android:layout_gravity="center"  
+		android:gravity="center" 
+	/> 
+	<ImageView 
+        android:id="@+id/yst_iv_setting" 
+        android:layout_width="26dip"
+        android:layout_height="26dip"           
+         
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"  
+        android:layout_marginRight="16dip" 
+		android:src="@drawable/yst_chat_setting"
+	/> 
+	    
+	<!-- 右边电话按钮 -->
+	<TextView
+        android:id="@+id/yst_btn_tel" 
+        android:layout_width="45dip"
+        android:layout_height="fill_parent"           
+        
+        android:layout_toLeftOf="@id/yst_btn_setting" 
+        android:layout_centerVertical="true"   
+		android:layout_gravity="center"  
+		android:gravity="center" 
+	/> 
+	<ImageView 
+        android:id="@+id/yst_iv_tel" 
+        android:layout_width="26dip"
+        android:layout_height="26dip"           
+         
+        android:layout_toLeftOf="@id/yst_btn_setting" 
+        android:layout_centerVertical="true"  
+        android:layout_marginRight="8dip" 
+		android:src="@drawable/yst_iv_tel"
+	/> 
+	    
+	<!-- 右边转人工按钮 -->
+	<Button
+        android:id="@+id/yst_btn_convert_user" 
+        android:layout_width="100dip"
+        android:layout_height="fill_parent"           
+         
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"   
+		android:layout_gravity="center"  
+		android:gravity="center" 
+		
+		android:text="转人工"
+		android:textColor="#0073D3" 
+		android:textSize="@dimen/yst_dim_comm_title"
+		android:visibility="gone"
+		android:background="@null"
+	/>  
+	    
+</RelativeLayout>

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/yst_RoundProgressDialog"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    
+    android:gravity="center"
+    android:orientation="vertical" >
+<!-- 	android:background="@drawable/yst_shape_bg_round_progress" -->
+
+    <ImageView
+        android:id="@+id/iv_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:contentDescription="@null"
+        android:src="@drawable/yst_anim_round_progress" 
+         android:visibility="gone"/>
+
+    <RelativeLayout  
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"> 
+		<ImageView  
+	        android:id="@+id/yst_txt_loading"  
+	        android:layout_width="90dp"  
+	        android:layout_height="90dp"   
+	        android:background="@drawable/yst_txt_loading"
+	        android:scaleType="center">  
+	     </ImageView> 
+	        
+		<ImageView  
+	        android:id="@+id/yst_txt_loading_circle"  
+	        android:layout_width="90dp"  
+	        android:layout_height="90dp"  
+	        android:background="@drawable/yst_txt_loading_circle"  
+	        android:scaleType="center">  
+	    </ImageView> 
+	</RelativeLayout> 
+        
+    <TextView
+        android:id="@+id/tv_msg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/yst_round_toast_icon_padding_right"
+        android:text="test"
+        android:lines="1"
+        android:ellipsize="end"
+        android:textColor="@color/yst_round_toast_msg_color"
+        android:textSize="@dimen/yst_round_toast_msg_fontsize"
+         android:visibility="gone" />
+
+</LinearLayout>

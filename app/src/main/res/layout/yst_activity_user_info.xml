@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"  
+	android:id="@+id/yst_layout_list_item" 
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+	android:orientation="vertical"    
+	android:background="@drawable/yst_serviceuser_bg"
+    >
+       
+	<!-- top -->
+    <RelativeLayout 
+        android:id="@+id/yst_layout_top"
+        android:layout_width="fill_parent"
+        android:layout_height="48dip"
+        android:layout_alignParentTop="true"
+        >
+        <include layout="@layout/yst_bar_title_return"/> 
+	    <RelativeLayout  
+	        android:layout_width="fill_parent"
+	        android:layout_height="1dip"
+	        android:layout_alignParentBottom="true"
+	        android:background="@color/yst_line"
+	        > 
+	    </RelativeLayout> 
+    </RelativeLayout> 
+    
+	<!-- center -->   
+    <LinearLayout 
+        android:layout_width="fill_parent"
+    	android:layout_height="fill_parent"  
+		android:orientation="vertical" > 
+			         
+	    <include layout="@layout/yst_include_user_info"/> 
+	    <include layout="@layout/yst_include_user_dtl"/>  
+	    <LinearLayout  
+			android:id="@+id/yst_btn_call"
+	        android:layout_width="fill_parent"
+	        android:layout_height="58dip"
+			android:layout_marginTop="@dimen/user_info_dtl_btn"
+			android:layout_marginBottom="@dimen/user_info_dtl_btn" 
+			android:layout_marginLeft="20dip"
+			android:layout_marginRight="20dip"
+			android:gravity="center"  
+			android:background="@drawable/yst_btn"
+	        > 
+	        <ImageView 
+		        android:layout_width="26dip"  
+		        android:layout_height="26dip" 
+		    	
+				android:layout_gravity="center"
+				android:gravity="center"    
+				android:src="@drawable/yst_call" 
+		        />   
+	        <TextView
+		        android:layout_width="wrap_content"  
+		        android:layout_height="fill_parent" 
+		    	
+				android:layout_gravity="center"
+				android:gravity="center"  
+				
+		        android:text="呼叫"  
+			    android:textSize="16dp"
+			    android:textColor="@color/yst_white" 
+		        /> 
+	    </LinearLayout> 
+		    
+       	  
+ 	</LinearLayout>  
+</LinearLayout>
+

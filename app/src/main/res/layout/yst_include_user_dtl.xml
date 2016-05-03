@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"  
+	android:id="@+id/yst_layout_list_item" 
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+	android:orientation="vertical"     
+	android:background="@color/yst_white"   
+    >	
+		   
+	<RelativeLayout 
+	    android:layout_width="fill_parent"
+	    android:layout_height="40dp"
+		android:orientation="vertical"      
+	    >
+	    <TextView
+		    android:id="@+id/yst_txt_tell"
+	        android:layout_width="wrap_content"  
+	        android:layout_height="fill_parent"  
+	    	android:gravity="left|center"
+			android:layout_gravity="left|center" 
+			android:layout_marginLeft="30dip"
+			android:layout_marginRight="30dip"
+			
+	        android:text="电话: 12345678"  
+		    android:textSize="15dp"
+		    android:textColor="@color/yst_gray" 
+	        />     
+	     <TextView
+		    android:id="@+id/yst_txt_saveto"
+	        android:layout_width="wrap_content"  
+	        android:layout_height="wrap_content" 
+	    	
+        	android:layout_centerVertical="true"
+			android:layout_gravity="center"
+			android:gravity="center"    
+			android:layout_marginRight="10dip"
+			android:padding="5dp" 
+			
+	        android:text="保存到通讯录"  
+		    android:textSize="11dp"
+		    android:textColor="@color/yst_white"
+		    android:layout_alignParentRight="true"  
+			android:background="@drawable/yst_btn_phobook"
+	        />     
+	</RelativeLayout> 
+	   
+            
+    <LinearLayout 
+        android:layout_width="fill_parent"  
+        android:layout_height="0.5dp"  
+		android:layout_marginLeft="16dip"
+		android:layout_marginRight="16dip" 
+		android:background="@color/yst_line"   
+        />     
+    <TextView
+	    android:id="@+id/yst_txt_qq"
+        android:layout_width="wrap_content"  
+        android:layout_height="40dp"   
+    	
+		android:layout_gravity="left|center"
+		android:gravity="left|center"   
+		android:layout_marginLeft="30dip"
+		android:layout_marginRight="30dip"
+		
+        android:text="QQ:    123456"  
+	    android:textSize="15dp"
+	    android:textColor="@color/yst_gray" 
+        />     
+    <LinearLayout 
+        android:layout_width="fill_parent"  
+        android:layout_height="0.5dp"  
+		android:layout_marginLeft="16dip"
+		android:layout_marginRight="16dip" 
+		android:background="@color/yst_line"   
+        />     
+    <TextView
+	    android:id="@+id/yst_txt_email"
+        android:layout_width="wrap_content"  
+        android:layout_height="40dp"   
+    	
+		android:layout_gravity="left|center"
+		android:gravity="left|center"   
+		android:layout_marginLeft="30dip"
+		android:layout_marginRight="30dip"
+		
+        android:text="邮箱: 123456@qq.com"  
+	    android:textSize="15dp"
+	    android:textColor="@color/yst_gray" 
+        />     
+    <LinearLayout 
+        android:layout_width="fill_parent"  
+        android:layout_height="0.5dp"  
+		android:layout_marginLeft="16dip"
+		android:layout_marginRight="16dip" 
+		android:background="@color/yst_line"   
+        />     
+    <TextView
+	    android:id="@+id/yst_txt_note"
+        android:layout_width="wrap_content"  
+        android:layout_height="40dp"  
+    	android:gravity="left|center"
+    	
+		android:layout_gravity="left|center" 
+		android:layout_marginLeft="30dip"
+		android:layout_marginRight="30dip"
+		
+        android:text="备注: 开................."  
+	    android:textSize="15dp"
+	    android:textColor="@color/yst_gray"
+	    android:layout_alignParentLeft="true"  
+        />   
+    <LinearLayout 
+        android:layout_width="fill_parent"  
+        android:layout_height="0.5dp"  
+		android:layout_marginLeft="16dip"
+		android:layout_marginRight="16dip" 
+		android:background="@color/yst_line"   
+        />	   
+            
+  	  
+</LinearLayout>
+

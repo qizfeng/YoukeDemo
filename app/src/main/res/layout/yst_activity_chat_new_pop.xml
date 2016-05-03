@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="130dip"
+    android:layout_height="53dip"
+    android:orientation="horizontal"
+	android:layout_marginRight="6dip" 
+	android:layout_marginLeft="6dip" 
+	android:layout_gravity="center_horizontal"  
+	 android:background="@drawable/yst_chat_pop_bg_2"
+    >
+  
+    <TextView
+        android:id="@+id/yst_btn_copy"
+        android:layout_width="66dip"
+        android:layout_height="43dip"
+        
+		android:layout_marginBottom="4dip" 
+		android:layout_gravity="left|center" 
+		android:gravity="center"         
+        android:text="复制"
+        android:textColor="@color/yst_white"
+        android:textSize="15dip"
+         />
+     
+    <TextView
+        android:id="@+id/yst_btn_del"
+        android:layout_width="60dip"
+        android:layout_height="43dip"
+        
+		android:layout_marginBottom="4dip" 
+		android:layout_gravity="center" 
+		android:gravity="center"         
+        android:text="删除"
+        android:textColor="@color/yst_white"
+        android:textSize="15dip"
+         />
+     
+    <TextView
+        android:id="@+id/yst_btn_updateuser"
+        android:layout_width="90dip"
+        android:layout_height="43dip"
+        
+		android:layout_marginBottom="4dip" 
+		android:layout_gravity="center" 
+		android:gravity="center"         
+        android:text="更新联系人"
+        android:textColor="@color/yst_white"
+        android:textSize="15dip"
+         android:visibility="gone"
+         />
+     
+    <TextView
+        android:id="@+id/yst_btn_send"
+        android:layout_width="87dip"
+        android:layout_height="43dip"
+        
+		android:layout_marginBottom="4dip" 
+		android:layout_gravity="center" 
+		android:gravity="center"         
+        android:text="重发"
+        android:textColor="@color/yst_white"
+        android:textSize="15dip"
+         android:visibility="gone"
+         />
+</LinearLayout>

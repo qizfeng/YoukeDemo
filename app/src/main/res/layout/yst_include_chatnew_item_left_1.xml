@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"  
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+	android:orientation="vertical"   
+    >
+    
+	<!-- left -->
+  	<RelativeLayout
+    	android:id="@+id/yst_layout_left_1"
+	    android:layout_width="fill_parent"  
+	    android:layout_height="wrap_content"  
+	    android:orientation="horizontal"
+	    android:layout_marginRight="30dip"
+	    android:layout_marginTop="11dip" 
+	    android:layout_marginBottom="5dip"
+		android:paddingTop="2dip"
+		android:paddingBottom="2dip"
+	    android:gravity="left" 
+	    android:background="@drawable/yst_btn_chatbg"
+	    > 
+		<ImageView  
+		    android:id="@+id/yst_img_left_1"
+		    android:layout_width="53dip"  
+		    android:layout_height="53dip"   
+	    	android:layout_marginRight="3dip"
+		    android:layout_alignParentLeft="true"
+		    android:src="@drawable/yst_def_userimg"
+		    />	    
+		<RelativeLayout
+			android:id="@+id/yst_contain_left"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"		    
+		    android:orientation="horizontal"    
+		    
+		    android:minHeight="43dip"
+		    android:gravity="left|center"
+		    android:layout_gravity="left"	
+			 android:layout_marginTop="10dip"
+			android:layout_toRightOf="@+id/yst_img_left_1"
+			android:background="@drawable/yst_chat_iv_chat_left9" >
+			<TextView
+			    android:id="@+id/yst_txt_left"
+		        android:layout_width="wrap_content"  
+		        android:layout_height="wrap_content" 
+		        
+		    	android:minHeight="33dip"
+		    	android:paddingLeft="5dip"
+		    	android:paddingRight="5dip"
+	   
+		        android:text="aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"  
+			    android:textSize="16sp"
+			    android:textColor="@color/yst_chat_txt"
+			    android:gravity="left|center" 
+			    android:autoLink="web"
+		        />   
+<!-- 		        声音图标    -->
+			<RelativeLayout
+				android:id="@+id/yst_iv_aud_len_left"
+			    android:layout_width="30dip"
+			    android:layout_height="wrap_content"
+			    >
+					
+				<ImageView
+				    android:id="@+id/yst_iv_aud_left"
+			        android:layout_width="20dip"  
+			        android:layout_height="30dip"  
+		   
+		   			android:layout_marginTop="2dip"
+			        android:background="@drawable/yst_chat_audio_left_3" 
+			        />   	  	
+				<ImageView
+				    android:id="@+id/yst_video_play_left"
+			        android:layout_width="30dip"  
+			        android:layout_height="30dip"  
+		    		
+		    		android:layout_centerHorizontal="true"
+			        android:layout_centerVertical="true" 
+			        android:src="@drawable/yst_video_play_icon"    
+			        />   	
+ 			</RelativeLayout>  			
+				
+		</RelativeLayout> 
+		
+<!-- 		        图片处理     -->
+ 		<RelativeLayout
+			android:id="@+id/yst_video_contain_left"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content" 
+			android:layout_toRightOf="@+id/yst_img_left_1"  >
+			 <ImageView
+		            android:id="@+id/yst_iv_img_left"  
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:maxWidth="300dip" 
+		            	            
+		   			android:layout_marginTop="11dip" 	            
+		            android:src="@drawable/yst_def_img" 
+		            android:scaleType="fitStart"
+		            android:adjustViewBounds="true"  
+		            />   
+	        <ImageView
+			    android:id="@+id/yst_video_thum_play_left"
+		        android:layout_width="30dip"  
+		        android:layout_height="30dip"  
+	    		
+	    		android:layout_centerHorizontal="true"
+		        android:layout_centerVertical="true" 
+		        android:src="@drawable/yst_video_play_icon"    
+		        />        
+		    <ProgressBar
+		        android:id="@+id/yst_progress_left"
+		        android:indeterminate="true"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        
+			    android:layout_gravity="center"  
+		        android:layout_centerVertical="true"
+		        android:layout_marginLeft="5dip" 
+		        style="?android:attr/progressBarStyleSmall" 
+		        android:indeterminateDrawable="@drawable/yst_progressbar"  
+		        android:layout_toRightOf="@id/yst_iv_img_left" 
+				/>      
+		</RelativeLayout>    
+		   
+	    <TextView  
+		    android:id="@+id/txt_aud_time_left"
+	        android:layout_width="wrap_content"  
+	        android:layout_height="wrap_content"  
+		    android:gravity="center"  
+	        android:layout_centerVertical="true"  
+	        android:layout_marginLeft="5dip"  
+	        
+	        android:text="3''"  
+		    android:textSize="11sp"
+		    android:textColor="@color/yst_black" 
+			android:layout_toRightOf="@id/yst_contain_left" 
+		    />
+  	</RelativeLayout>       
+       
+  	 
+</LinearLayout>
+

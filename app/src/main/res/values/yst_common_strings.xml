@@ -1,0 +1,58 @@
+<resources>
+
+    <string name="yst_app_name">有客</string>
+
+    <!-- 公共 -->
+    <string name="yst_waiting">请稍后...</string> 
+    <string name="yst_netclose">手机网络没开</string> 
+    
+    <!-- 登录 -->
+    <string name="yst_login_title">登录</string>
+    <string name="yst_login_username">帐号</string>
+    <string name="yst_login_password">密码</string>
+    <string name="yst_login_btn">登录</string>
+    <string name="yst_login_forgetpwd">忘记密码</string>
+    
+    <!-- 聊天 -->
+    <string name="yst_chat_title">客户</string>
+    <string name="yst_imgview_title">图片浏览</string>
+    <string name="yst_download_failed">下载失败!</string>
+    <string name="yst_save_failed">保存失败</string>
+    <string name="yst_hassaveto">已保存到:</string>
+    <string name="yst_poshassend">位置已发送!</string>
+    
+    <string name="yst_today">今天</string>
+    <string name="yst_yestoday">昨天</string>
+    <string name="yst_monday">M月d号</string>
+    
+    <!-- 在线客服 -->
+    <string name="yst_serviceusers_title">在线客服</string>
+    <string name="yst_userinfo_title">客服资料</string>
+    <string name="yst_initappkey">正在初始化AppKey...</string>
+    <string name="yst_regfailed">没注册成功!</string>
+    <string name="yst_tipsuser">最近对话</string>
+    <string name="yst_faq_title">帮助</string>
+    <string name="yst_faq_quest">问题</string>
+    <string name="yst_add_work">增加工单</string>
+    <string name="yst_work_list">我的工单</string>
+    <string name="yst_chatuserlist">消息列表</string>
+    <string name="worklist_pingfen">请打分</string>
+    
+    <string name="yst_nofindusers"> 对不起，没有在线的客服人员，请稍后再试！ \n Sorry, no online customer service, please try again later!</string>
+    <string name="yst_noonlineusers"> 没有在线的客服人员!</string>
+    <string name="yst_back">返回</string>
+    <string name="yst_service_user">人工客服</string>
+    <string name="yst_onlineuser">在线留言</string>
+    <string name="yst_search_hint">描述你的问题</string>
+    <string name="yst_normal_qaue">常见问题</string>
+    <string name="yst_cancel">取消</string>
+    <string name="yst_faq_dtltip">对你有帮助吗？</string>
+    <string name="yst_faq_dtltip_nohelp">你发现这些无帮助。</string>
+    <string name="yst_yes">是</string>
+    <string name="yst_no">否</string>
+    <string name="yst_save">提交</string>
+    <string name="yst_input_title">请输入标题</string>
+    <string name="yst_input_content">请输入留言</string>
+    <string name="yst_linktel">联系电话</string>
+    <string name="yst_email">邮箱</string>
+</resources>

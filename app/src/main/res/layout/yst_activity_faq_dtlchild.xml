@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" 
+    android:background="#F7F7F7"  > 
+
+	<!-- top -->
+    <RelativeLayout 
+        android:id="@+id/yst_layout_top"
+        android:layout_width="fill_parent"
+        android:layout_height="48dip"
+        android:layout_alignParentTop="true" 
+        >
+        <include layout="@layout/yst_bar_faq"/>  
+    </RelativeLayout> 
+    
+    <!-- network error -->
+    <RelativeLayout 
+        android:id="@+id/yst_page_error"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" 
+        android:layout_below="@+id/yst_layout_top"
+		android:visibility="gone"
+        >
+        <include layout="@layout/yst_bar_error"/>
+        <include layout="@layout/yst_bar_wait"/>
+    </RelativeLayout>   
+    
+	<!-- foot -->
+	<LinearLayout 
+        android:id="@+id/yst_layout_foot"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true">  
+        <include layout="@layout/yst_include_faq_dtlchild__footer"/> 
+        <include layout="@layout/yst_include_faq_dtlchild__footer2"/>         
+	</LinearLayout>   
+    
+	<!-- center  style="@style/listView" -->  
+	<LinearLayout 
+	    android:layout_width="fill_parent"
+	    android:layout_height="fill_parent"
+	    android:orientation="vertical"
+		android:layout_margin="10dp"
+        android:layout_below="@id/yst_page_error" 
+        android:layout_above="@id/yst_layout_foot"  > 
+        <TextView
+		    android:id="@+id/title"
+	        android:layout_width="fill_parent"  
+	        android:layout_height="45dp" 
+	    	
+	        android:layout_centerHorizontal="true"
+	        android:layout_centerVertical="true"
+			android:layout_gravity="center"
+			android:gravity="left|center"   
+	        android:text="第一次使用"  
+		    android:textSize="18dp"
+		    android:textColor="@color/yst_black"
+		    android:singleLine="true" 
+		    android:maxLines="1" 
+			android:ellipsize="end" 
+	        />    
+        <TextView
+		    android:id="@+id/content"
+	        android:layout_width="fill_parent"  
+	        android:layout_height="wrap_content" 
+	    	 
+	        android:layout_centerHorizontal="true"
+	        android:layout_centerVertical="true"
+			android:layout_gravity="center"
+			android:gravity="left|center"   
+	        android:text="第一次使用第一次使用第一次使用"  
+		    android:textSize="15dp"
+		    android:textColor="#8B8B8B" 
+	        />    
+	</LinearLayout>  
+</RelativeLayout>

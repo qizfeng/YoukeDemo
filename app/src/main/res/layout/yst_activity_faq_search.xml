@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"  > 
+
+	<!-- top -->
+    <RelativeLayout 
+        android:id="@+id/yst_layout_top"
+        android:layout_width="fill_parent"
+        android:layout_height="43dip"
+        android:layout_alignParentTop="true"   
+    	android:gravity="center"
+	    android:background="#EBEBEB"
+        >  
+<!--         返回  -->
+        <TextView
+        	android:id="@+id/yst_btn_back"
+	        android:layout_width="60dp"
+	        android:layout_height="25dp"           
+			android:layout_alignParentRight="true" 
+        	android:layout_centerVertical="true"
+			android:gravity="center"  
+			android:textColor="@color/yst_blue" 
+			android:textSize="@dimen/user_info_dtl_top"
+			android:text="@string/yst_cancel"   
+			android:background="@drawable/yst_selector_bg"
+		/> 
+        <EditText
+        	android:id="@+id/yst_edt_search"
+	        android:layout_width="fill_parent"
+	        android:layout_height="30dp"           
+			
+        	android:layout_centerVertical="true"
+			android:paddingLeft="23dp"
+			android:layout_marginLeft="7dp"
+			android:layout_marginRight="55dp"
+			android:gravity="left|center" 
+			android:singleLine="true"		
+			android:ellipsize="end"
+			android:textColor="@color/yst_black" 
+			android:textSize="@dimen/user_info_dtl_top"
+			android:imeOptions="actionSearch" 
+			android:hint="@string/yst_search_hint"   
+			android:background="@drawable/yst_search_bg"
+		/> 
+		<ImageView 
+	        android:layout_width="13dp"
+	        android:layout_height="13dp"     
+	        android:layout_marginLeft="15dp"
+			android:layout_alignParentLeft="true" 
+        	android:layout_centerVertical="true"
+			android:background="@drawable/yst_iv_search"
+		/> 
+		<ImageView 
+        	android:id="@+id/iv_kill"
+	        android:layout_width="13dp"
+	        android:layout_height="13dp"     
+	        android:layout_marginRight="65dp"
+			android:layout_alignParentRight="true" 
+        	android:layout_centerVertical="true"
+			android:background="@drawable/yst_iv_kill"
+		/> 
+		<Button 
+        	android:id="@+id/btn_kill"
+	        android:layout_width="53dp"
+	        android:layout_height="fill_parent"     
+	        android:layout_marginRight="55dp"
+			android:layout_alignParentRight="true"  
+        	android:layout_centerVertical="true"
+			android:background="@null"
+		/> 
+    </RelativeLayout> 
+    
+    <!-- network error -->
+    <RelativeLayout 
+        android:id="@+id/yst_page_error"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" 
+        android:layout_below="@+id/yst_layout_top"
+		android:visibility="gone"
+        >
+        <include layout="@layout/yst_bar_error"/>
+        <include layout="@layout/yst_bar_wait"/>
+    </RelativeLayout>   
+    
+	<!-- foot -->
+    <RelativeLayout 
+        android:id="@+id/yst_layout_foot"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        >  
+    </RelativeLayout> 
+    
+	<!-- center  style="@style/listView" -->  
+    <RelativeLayout   
+        android:id="@+id/yst_layout_full"  
+	    android:layout_width="fill_parent"
+	    android:layout_height="fill_parent"
+        android:layout_below="@id/yst_page_error" 
+        android:layout_above="@id/yst_layout_foot" 
+        >
+		<ListView
+		    android:id="@+id/yst_listView"  
+		    android:layout_width="fill_parent"
+		    android:layout_height="fill_parent"
+		    
+		    android:divider="@null" 
+	        android:dividerHeight="0.1dp"
+	        android:listSelector="@drawable/yst_selector_white_bg"
+	        android:cacheColorHint="#00000000"
+		    android:fadeScrollbars="true" 
+		    android:focusable="true" 
+	        android:choiceMode="singleChoice"
+	        android:scrollbars="none"  
+		    android:fadingEdge="none" /> 
+		 
+    </RelativeLayout> 
+	    
+	  
+</RelativeLayout>

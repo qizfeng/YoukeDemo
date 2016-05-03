@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 
+   发送消息  yst_layout_right_1
+-->
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"  
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+	android:orientation="vertical"    
+    >
+    
+    <!-- ===========================right============================== -->
+  	<LinearLayout  
+        android:id="@+id/yst_layout_right_1"
+	    android:layout_width="fill_parent"  
+	    android:layout_height="wrap_content"  
+	    android:orientation="horizontal"
+	    android:layout_marginTop="11dip" 
+	    android:layout_marginBottom="2dip" 
+	    android:layout_marginLeft="3dip" 
+		android:paddingTop="2dip"
+		android:paddingBottom="2dip"
+	    android:gravity="right" 
+	    android:background="@drawable/yst_btn_chatbg"
+	    >	
+	    <LinearLayout  
+	        android:id="@+id/yst_layout_right_child"
+		    android:layout_width="wrap_content"  
+		    android:layout_height="wrap_content"  
+		    android:orientation="horizontal" 
+			android:layout_gravity="center" 
+			android:gravity="right|center"  
+			android:minWidth="90dip"
+		    >    
+	<!-- 		        错误图片     -->
+		    <ImageView
+	            android:id="@+id/yst_iv_img_error"  
+	            android:layout_width="24dip"
+	            android:layout_height="24dip" 
+	            
+			    android:layout_gravity="right"  
+		        android:layout_centerVertical="true"
+	        	android:layout_marginRight="12dip" 
+	            
+	            android:src="@drawable/yst_iv_img_error" 
+	            android:scaleType="fitStart"
+	            android:adjustViewBounds="true"  
+	            />   
+			    
+		    <TextView  
+			    android:id="@+id/txt_progress"
+		        android:layout_width="wrap_content"  
+		        android:layout_height="wrap_content"  
+			    android:gravity="center"  
+			    android:layout_gravity="right|center"  
+		        android:layout_centerVertical="true"  
+		        android:layout_marginRight="5dip"  
+		        
+		        android:text="10%"  
+			    android:textSize="13sp"
+			    android:textColor="@color/yst_titile_bg"  
+			    />
+	 		<ProgressBar
+		        android:id="@+id/yst_progress"
+		        android:indeterminate="true"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        
+			    android:layout_gravity="center"  
+		        android:layout_centerVertical="true"
+		        android:layout_marginRight="5dip" 
+		        style="?android:attr/progressBarStyleSmall" 
+		        android:indeterminateDrawable="@drawable/yst_progressbar"   
+				/>  
+				 
+		</LinearLayout>    
+<!-- 		        图片处理     -->
+ 		<RelativeLayout
+			android:id="@+id/yst_video_contain_right"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content" >
+		    <ImageView
+	            android:id="@+id/yst_iv_img_right"  
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:maxWidth="300dip" 
+	             
+		   		android:layout_marginTop="11dip" 
+	            android:src="@drawable/yst_def_img" 
+	            android:scaleType="fitStart"
+	            android:adjustViewBounds="true" 
+	            />   
+	        <ImageView
+			    android:id="@+id/yst_video_thum_play_right"
+		        android:layout_width="30dip"  
+		        android:layout_height="30dip"  
+	    		
+	    		android:layout_centerHorizontal="true"
+		        android:layout_centerVertical="true" 
+		        android:src="@drawable/yst_video_play_icon"    
+		        />       
+		</RelativeLayout>    
+		    
+<!-- 		        文字表情内容    -->  
+	    <LinearLayout  
+		    android:layout_width="wrap_content"  
+		    android:layout_height="wrap_content"  
+		    android:orientation="horizontal"  
+			android:layout_marginTop="10dip"
+		    >    
+		    <RelativeLayout
+				android:id="@+id/yst_contain_right"
+			    android:layout_width="wrap_content"
+			    android:layout_height="wrap_content"
+			    android:orientation="horizontal"     
+			      
+			    android:minHeight="36dip" 
+			    android:gravity="right|center"
+			    android:layout_gravity="right|center"	 
+				android:background="@drawable/yst_chat_iv_chat_right9" >
+			    <TextView
+				    android:id="@+id/yst_txt_right"
+			        android:layout_width="wrap_content"  
+			        android:layout_height="wrap_content"   
+			             
+			    	android:minHeight="36dip"
+			    	android:gravity="left|center"
+			    	android:paddingLeft="5dip"
+			    	android:paddingRight="5dip"  
+			        
+			        android:text="a"  
+				    android:textSize="16sp"
+				    android:textColor="@color/yst_white" 
+			        />  
+	<!-- 		        声音图标    -->
+				<RelativeLayout
+					android:id="@+id/yst_iv_aud_len_right"
+				    android:layout_width="220dip"
+			    	android:minHeight="36dip"
+				    android:layout_height="wrap_content" >
+						
+					<ImageView
+					    android:id="@+id/yst_iv_aud_right"
+				        android:layout_width="20dip"  
+				        android:layout_height="30dip"  
+			    		
+			    		android:layout_alignParentRight="true"
+				        android:layout_centerVertical="true" 
+				        android:background="@drawable/yst_chat_audio_right_3"    
+				        />   	
+					<ImageView
+					    android:id="@+id/yst_video_play_right"
+				        android:layout_width="30dip"  
+				        android:layout_height="30dip"  
+			    		
+			    		android:layout_centerHorizontal="true"
+				        android:layout_centerVertical="true" 
+				        android:src="@drawable/yst_video_play_icon"    
+				        />   	
+	<!-- 		     声音长度    -->  
+				    <TextView  
+					    android:id="@+id/txt_aud_time_right"
+				        android:layout_width="70dp"  
+				        android:layout_height="wrap_content"  
+					    android:gravity="center"  
+					    android:layout_gravity="center"   
+				        android:layout_centerVertical="true"  
+				        android:layout_marginRight="35dip"  
+				        
+				        android:text="23''"  
+					    android:textSize="11sp"
+					    android:textColor="@color/yst_white"   
+					    />   
+	 			</RelativeLayout>   
+	 		</RelativeLayout>   
+		</LinearLayout>    
+			
+ 		 
+<!-- 		        头像    -->
+	   <ImageView  
+		    android:id="@+id/yst_img_right"
+		    android:layout_width="53dip"  
+		    android:layout_height="53dip"   
+	    	android:layout_marginLeft="3dip" 
+		    android:src="@drawable/yst_def_userimg"
+		     android:visibility="gone"
+		    />  
+ 	</LinearLayout>  
+      
+</LinearLayout>
+

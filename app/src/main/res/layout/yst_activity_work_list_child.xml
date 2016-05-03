@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:background="@color/yst_full_bg"  > 
+
+	<!-- top -->
+    <RelativeLayout 
+        android:id="@+id/yst_layout_top"
+        android:layout_width="fill_parent"
+        android:layout_height="48dip"
+        android:layout_alignParentTop="true" 
+        >
+        <include layout="@layout/yst_bar_faq"/> 
+    </RelativeLayout> 
+    
+    <!-- page title -->
+    <RelativeLayout 
+        android:id="@+id/yst_page_title"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" 
+        android:layout_below="@+id/yst_layout_top" 
+        >
+        <include layout="@layout/yst_activity_work_list_child_title"/> 
+    </RelativeLayout>   
+    
+	<!-- foot -->
+    <RelativeLayout 
+        android:id="@+id/yst_layout_foot"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        >  
+<!--         <include layout="@layout/yst_include_faq_dtlchild__footer"/>  -->
+<!--         <include layout="@layout/yst_include_faq_dtlchild__footer2"/>      -->
+        <include layout="@layout/yst_work_list_footer"/>    
+    </RelativeLayout> 
+    
+	  
+	<!--listView 的底部图片效果，下拉可看到的icon -->  
+	<ImageView 
+        android:layout_width="110dp"
+        android:layout_height="50dp"  
+    	android:layout_centerHorizontal="true"
+    	android:layout_marginTop="10dp"
+		android:src="@drawable/yst_iv_youkelogo"
+		android:scaleType="centerCrop"
+        android:layout_below="@id/yst_page_title"  
+        android:visibility="gone"
+	/> 
+	<!-- center  style="@style/listView" -->  
+	<com.zipingfang.android.yst.libs.pullView.ListViewEx
+	    android:id="@+id/yst_listView"  
+	    android:layout_width="fill_parent"
+	    android:layout_height="fill_parent"
+	    
+	    android:divider="@null" 
+        android:dividerHeight="0.1dp"
+        android:listSelector="@drawable/yst_selector_white_bg"
+        android:cacheColorHint="#00000000"
+	    android:fadeScrollbars="true" 
+	    android:focusable="true" 
+        android:choiceMode="singleChoice"
+        android:scrollbars="none"  
+	    android:fadingEdge="none" 
+        android:layout_below="@id/yst_page_title" 
+        android:layout_above="@id/yst_layout_foot"  /> 
+	  
+</RelativeLayout>

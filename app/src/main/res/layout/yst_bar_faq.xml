@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="48dip"
+    android:orientation="vertical" 
+    android:background="@color/yst_titile_bg"   > 
+ 	
+	<!-- 返回 -->
+	<TextView
+        android:id="@+id/yst_btn_back" 
+        android:layout_width="55dip"
+        android:layout_height="fill_parent"           
+         
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"   
+		android:layout_gravity="center"  
+		android:gravity="right|center" 
+		android:singleLine="true"		
+		android:ellipsize="end"
+		android:textColor="@color/yst_blue" 
+		android:textSize="@dimen/user_info_dtl_top"
+		android:text=""   
+	/> 
+	<ImageView 
+        android:layout_width="12dp"
+        android:layout_height="20dp"           
+         
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"   
+		android:layout_gravity="center"  
+		android:gravity="center"
+		android:layout_marginLeft="12dip"
+		
+		android:background="@drawable/yst_back"  
+	/> 
+              
+	<!-- right txt -->
+	<TextView
+        android:id="@+id/yst_top_info" 
+        android:layout_width="75dip"
+        android:layout_height="fill_parent"           
+         
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"   
+		android:layout_gravity="center"  
+		android:gravity="center" 
+		android:singleLine="true"		
+		android:ellipsize="end"
+		android:textColor="@color/yst_blue" 
+		android:textSize="13sp"
+		android:text="@string/yst_service_user"   
+		android:background="@drawable/yst_selector_bg"
+	/> 
+	
+	<!-- 标题 -->
+	<LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" 
+	    android:orientation="horizontal" 
+	    android:layout_marginLeft="40dp" 
+	    android:layout_marginRight="40dp"
+	    android:gravity="center"  > 
+	    
+		<TextView
+	        android:id="@+id/yst_comm_title" 
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"           
+	        
+			android:layout_gravity="center"  
+			android:gravity="center"
+			
+			android:singleLine="true"		
+			android:ellipsize="end"
+			android:textColor="@color/yst_color_comm_title" 
+			android:textSize="@dimen/yst_dim_comm_title"
+			android:text="@string/yst_app_name"  
+		/> 
+		<TextView
+	        android:id="@+id/yst_comm_sub_title" 
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"           
+	         
+			android:layout_gravity="center"  
+			android:gravity="center"
+			android:layout_marginLeft="6dip"
+			
+			android:singleLine="true"		
+			android:ellipsize="end"
+			android:textColor="@color/yst_color_comm_title" 
+			android:textSize="15dip"
+			android:text=""   
+		/> 
+	</LinearLayout> 
+               
+    <RelativeLayout  
+        android:layout_width="fill_parent"
+        android:layout_height="1dip"
+        android:layout_alignParentBottom="true"
+        android:background="@color/yst_line" /> 
+</RelativeLayout>

@@ -1,0 +1,30 @@
+<resources>
+
+    <!-- 顶部标题的size -->
+    <dimen name="yst_dim_comm_title">20dp</dimen> 
+
+    <!-- user info  -->
+    <dimen name="user_info_dtl_top0">20dp</dimen> 
+    <dimen name="user_info_dtl_top">15dp</dimen> 
+    <dimen name="user_info_dtl_btn">25dp</dimen> 
+    
+    <!-- 自定义Toast的宽度 -->
+    <dimen name="yst_round_toast_w">180dp</dimen>
+    <!-- 自定义Toast的高度 -->
+    <dimen name="yst_round_toast_h">180dp</dimen>
+    <!-- 自定义Toast的图标paddingRight -->
+    <dimen name="yst_round_toast_icon_padding_right">10dp</dimen>
+    <!-- 自定义Toast的字体大小 -->
+    <dimen name="yst_round_toast_msg_fontsize">15sp</dimen>
+    <!-- 自定义Toast的圆角半径 -->
+    <dimen name="yst_round_toast_radius">8dp</dimen>
+
+    <!-- 自定义ProgressDialog的圆角半径 -->
+    <dimen name="yst_round_progress_radius">8dp</dimen>
+
+    <!-- 滚动点的高宽 -->
+    <dimen name="yst_selectedPoint_wh">12dp</dimen>
+    <!-- 滚动点的间隔距离 -->
+    <dimen name="yst_selectedPoint_space">2dp</dimen>
+    
+</resources>

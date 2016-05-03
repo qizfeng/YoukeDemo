@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:background="@color/yst_full_bg"   > 
+
+	<!-- top -->
+    <RelativeLayout 
+        android:id="@+id/yst_layout_top"
+        android:layout_width="fill_parent"
+        android:layout_height="48dip"
+        android:layout_alignParentTop="true" 
+        >
+        <include layout="@layout/yst_bar_faq"/> 
+    </RelativeLayout> 
+    
+    <!-- network error -->
+    <RelativeLayout 
+        android:id="@+id/yst_page_error"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" 
+        android:layout_below="@+id/yst_layout_top"
+		android:visibility="gone"
+        >
+        <include layout="@layout/yst_bar_error"/>
+        <include layout="@layout/yst_bar_wait"/>
+    </RelativeLayout>   
+    
+	<!-- foot -->
+    <RelativeLayout 
+        android:id="@+id/yst_layout_foot"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        >  
+    </RelativeLayout> 
+    
+	<!-- center  style="@style/listView" -->  
+    <LinearLayout  
+        android:id="@+id/yst_layout_search"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" 
+        android:orientation="vertical"
+        android:layout_below="@id/yst_page_error"  
+        >  
+        <RelativeLayout  
+		    android:id="@+id/yst_btn_search" 
+	        android:layout_width="fill_parent"
+	        android:layout_height="45dp" 
+	        android:gravity="center" 
+	        android:background="#EBECEE"
+	        > 
+	        <LinearLayout
+		        android:layout_width="fill_parent"
+		        android:layout_height="35dp" 
+				android:layout_margin="5dp"  
+	        	android:gravity="center" 
+				android:background="@drawable/yst_search_bg" >
+				<ImageView 
+			        android:layout_width="13dp"
+			        android:layout_height="13dp"  
+					android:background="@drawable/yst_iv_search"
+				/> 
+		        <TextView
+			        android:layout_width="wrap_content"
+			        android:layout_height="25dp"           
+					
+					android:layout_marginLeft="5dp"
+					android:layout_marginRight="15dp"
+					android:gravity="center" 
+					android:singleLine="true"		
+					android:ellipsize="end"
+					android:textColor="@color/yst_black" 
+					android:textSize="@dimen/user_info_dtl_top"
+					android:hint="@string/yst_search_hint"   
+					android:background="@null"
+				/> 
+			</LinearLayout> 
+	    </RelativeLayout>  
+    </LinearLayout>  
+	  
+	<!--listView 的底部图片效果，下拉可看到的icon -->  
+	<ImageView 
+        android:layout_width="110dp"
+        android:layout_height="50dp"  
+    	android:layout_centerHorizontal="true"
+    	android:layout_marginTop="10dp"
+		android:src="@drawable/yst_iv_youkelogo"
+		android:scaleType="centerCrop"
+        android:layout_below="@id/yst_layout_search"  
+	/> 
+	
+	<!-- center  style="@style/listView" -->   
+	<com.zipingfang.android.yst.libs.pullView.ListViewEx
+	    android:id="@+id/yst_listView" 
+	    android:layout_width="fill_parent"
+	    android:layout_height="fill_parent"
+	    
+	    android:cacheColorHint="#00000000" 
+	    android:fadingEdge="none" 
+	    android:fadeScrollbars="true" 
+	    android:focusable="true" 
+	    android:fastScrollEnabled="false"  
+	    
+	    android:divider="@null" 
+	    android:dividerHeight="0dip"
+	    android:scrollbars="none"
+        android:layout_below="@id/yst_layout_search"   /> 
+</RelativeLayout>

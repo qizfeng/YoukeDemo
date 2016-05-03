@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"  
+	android:id="@+id/yst_layout_list_item" 
+    android:layout_width="fill_parent"
+    android:layout_height="45dp" 
+	android:orientation="vertical" 
+	android:background="@drawable/yst_selector_white_bg"
+    >    
+    <TextView
+	    android:id="@+id/title"
+        android:layout_width="fill_parent"  
+        android:layout_height="45dp" 
+    	
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+		android:layout_gravity="center"
+		android:gravity="left|center"   
+		android:layout_marginLeft="20dp"
+        android:text="第一次使用"  
+	    android:textSize="15dp"
+	    android:textColor="#8B8B8B"
+	    android:singleLine="true" 
+	    android:maxLines="1" 
+		android:ellipsize="end" 
+        />    
+    <ImageView 
+        android:layout_width="15dp"  
+        android:layout_height="15dp" 
+    	 
+		android:layout_alignParentRight="true"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+		android:layout_marginRight="10dp"
+        android:src="@drawable/yst_array_right"
+        />    
+    <RelativeLayout 
+        android:layout_width="fill_parent"  
+        android:layout_height="0.5dp"  
+		android:layout_alignParentBottom="true"
+        android:background="@color/yst_line"
+        />    
+</RelativeLayout>
+

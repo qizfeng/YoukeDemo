@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" 
+	android:id="@+id/yst_layout_foot_emoj"
+	android:layout_width="fill_parent" 
+	android:layout_height="wrap_content"
+    android:paddingTop="1dip"  
+	android:orientation="vertical"  
+	 android:background="@color/yst_white"
+ 	>
+	 
+		<!-- 表情 281dip 是键盘高度 -->
+		<!-- 表情161dip 是3 rows -->
+		<LinearLayout
+	        android:id="@+id/include_chat_imgs"
+	        android:layout_width="fill_parent"
+	        android:layout_height="161dip"
+			android:orientation="vertical"
+	        >
+		    <android.support.v4.view.ViewPager
+		        android:id="@+id/yst_viewpager"
+		        android:layout_width="match_parent"
+		        android:layout_height="match_parent" /> 
+    	</LinearLayout>  
+	    
+		<RadioGroup
+	        android:id="@+id/radiogroup_emoji_circle" 
+		    android:layout_width="150dp"
+		    android:layout_height="20dp"
+		    android:layout_gravity="center"
+		    android:gravity="center"
+		    android:visibility="invisible"
+		    android:orientation="horizontal"  
+		    >
+			   <RadioButton 
+			       android:id="@+id/tab_bar_lab1"
+			       style="@style/top_tab_bar_item"
+			       android:checked="true" 
+			       android:background="@drawable/yst_dot_gray1"
+			       />
+			   <RadioButton 
+			       android:id="@+id/tab_bar_lab2"
+			       style="@style/top_tab_bar_item" 
+			       android:background="@drawable/yst_dot_gray2"
+			       />
+			   <RadioButton 
+			       android:id="@+id/tab_bar_lab3"
+			       style="@style/top_tab_bar_item" 
+			       android:background="@drawable/yst_dot_gray2"
+			       android:visibility="gone"
+			       />
+			   <RadioButton 
+			       android:id="@+id/tab_bar_lab4"
+			       style="@style/top_tab_bar_item" 
+			       android:background="@drawable/yst_dot_gray2"
+			       android:visibility="gone"
+			       /> 
+		</RadioGroup>
+
+</LinearLayout>

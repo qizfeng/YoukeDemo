@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent"
+	android:layout_height="wrap_content"  
+	android:gravity="center_horizontal"
+	android:orientation="vertical"
+   >   
+   <include layout="@layout/yst_include_chatnew_foot_send"/>
+   <include layout="@layout/yst_include_chatnew_foot_send_robot"/>
+   <include layout="@layout/yst_include_chatnew_foot_img_pho"/>
+   <include layout="@layout/yst_include_chatnew_foot_audio"/>
+<!--    <include layout="@layout/yst_include_chat_foot_emoimgs"/> -->
+   <include layout="@layout/yst_include_chat_foot_emoimgs_viewpager"/>
+</LinearLayout>  
+  	

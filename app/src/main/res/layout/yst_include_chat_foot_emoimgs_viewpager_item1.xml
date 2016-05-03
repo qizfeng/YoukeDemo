@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"  
+	android:layout_width="fill_parent" 
+	android:layout_height="wrap_content" 
+	android:orientation="vertical"   
+	android:id="@+id/include_chat_event1"
+ 	>  
+    <include layout="@layout/yst_include_chat_foot_emoimgs_01"/> 
+    <include layout="@layout/yst_include_chat_foot_emoimgs_02"/> 
+    <include layout="@layout/yst_include_chat_foot_emoimgs_03"/> 			        
+    <include layout="@layout/yst_include_chat_foot_emoimgs_04"/> 
+</LinearLayout>

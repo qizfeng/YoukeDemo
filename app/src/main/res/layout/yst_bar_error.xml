@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- http://www.eoeandroid.com/thread-1081-1-1.html -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" 
+    android:id="@+id/layout_page_error"
+	android:layout_width="fill_parent" 
+	android:layout_height="45dip"
+	android:background="#2E6DB6">
+	 
+    <!-- network error -->
+    <TextView  
+	    android:layout_height="20dip"
+	    android:layout_width="20dip" 
+	     
+		android:layout_gravity="center"
+		android:gravity="center"
+        android:layout_marginLeft="16dip" 
+        
+	    android:text="!"
+	    android:textSize="15sp"
+	    android:textColor="@android:color/white" 
+	    android:background="@drawable/yst_dot_red"
+	/> 
+    <TextView  
+	    android:id="@+id/yst_txt_error"
+	    android:layout_height="wrap_content"
+	    android:layout_width="wrap_content" 
+	     
+		android:layout_gravity="center"
+		android:gravity="center"
+        android:layout_marginLeft="16dip" 
+        
+	    android:text="无法连接到服务器"
+	    android:textSize="15sp"
+	    android:textColor="@color/yst_white" 
+	/> 
+	
+</LinearLayout>
